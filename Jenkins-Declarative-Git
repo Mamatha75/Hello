@@ -6,5 +6,11 @@ pipeline{
                 git 'https://github.com/Mamatha75/Bank_proj.git'
             }
         }
+    stage("maven build"){
+        steps{
+             sh "mvn clean package"
+        }
     }
+        
+ }
 }
